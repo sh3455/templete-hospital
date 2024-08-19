@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare</title>
+    <link rel="stylesheet" href="css/app.css">
+
+</head>
+<body>
+    <section class="app" id="app">
+        <div class="section-title">
+            <h2><span>M</span>ake an <span>A</span>ppointment</h2>
+            <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+        </div>
+<form action="php/hospital.php" method="post" class="php-email-form">
+    <div class="form_app">
+    <label for="name">patient name:</label>
+    <input type="text" id="n" required>
+    <br> <br>
+        <label for="department">Department:</label>
+        <select name="department" id="d">
+            <option value="Select Department">Select Department</option>
+            <option value="Dental surgery">Dental surgery</option>
+            <option value="Heart surgery">Heart surgery</option>
+            <option value="Orthopedic surgery">Orthopedic surgery</option>
+            <option value="Dermatology ">Dermatology </option>
+            <option value="Internal medicine">Internal medicine</option>
+            <option value="Radiology and Laboratory tests">Radiology and Laboratory tests</option>
+            <option value="Ophthalmology">Ophthalmology</option>
+            <option value="Otolaryngology">Otolaryngology</option>
+        </select>
+        <label for="doctor">Doctor:</label>
+        <select name="doctor" id="doctor">
+            <option value="Select Doctor">Select Doctor</option>
+            <option value="Dr.Sally">Dr.Sally</option>
+            <option value="Dr.Jone">Dr.Jone</option>
+            <option value="Dr.Olivia">Dr.Olivia</option>
+            <option value="Dr.Leila">Dr.Leila</option>
+            <option value="Dr.Mariam">Dr.Mariam</option>
+            <option value="Dr.Daniel">Dr.Daniel</option>
+        </select> <br> <br>
+    
+        <label for="number">Phone number:</label>
+        <input type="tel" id="n" required> <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="e" required>
+        <br><br>
+        <label for="med">Medical Condition:</label>
+        <textarea id="med" name="med" rows="2" required></textarea>
+        <br><br>
+        <label for="comment">Comment:</label>
+    <textarea id="comment" name="comment" rows="2"  required></textarea>
+        <br><br>
+        <button onclick="appvalidation()">Submit</button>
+</form> 
+</section>
+
+<script src="javascript/main.js"></script>
+</body>
+</html>
